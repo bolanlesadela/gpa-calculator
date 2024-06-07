@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="text-center">
+            <img src="Calculator-pana.png" alt="calculator" id="clc">
+            <h1>GPA Calculator</h1>
+        </div>
+        <div class="row form-row">
+            <div class="col-md-3 mb-3">
+                <input id="course-code" class="form-control" type="text" placeholder="Course Code">
+            </div>
+            <div class="col-md-3 mb-3">
+                <input id="unit-load" class="form-control" type="number" placeholder="Unit Load" min="1" max="15">
+            </div>
+            <div class="col-md-3 mb-3">
+                <select id="grade" class="form-control">
+                    <option value="">Grade</option>
+                    <option value="5">A</option>
+                    <option value="4">B</option>
+                    <option value="3">C</option>
+                    <option value="2">D</option>
+                    <option value="1">E</option>
+                    <option value="0">F</option>
+                </select>
+            </div>
+            <div class="col-md-3 mb-3">
+                <input id="add" class="btn btn-primary btn-block" type="button" value="Add">
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table id="table" class="table table-bordered display-none">
+                <thead>
+                    <tr>
+                        <th>Select</th>
+                        <th>Course Code</th>
+                        <th>Unit Load</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+                <tfoot id="tfoot"></tfoot>
+            </table>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <input id="calc-gp" class="btn btn-success btn-block display-none" type="button" value="Calc GPA">
+            </div>
+            <div class="col-md-4 mb-3">
+                <input id="clear" class="btn btn-warning btn-block display-none" type="button" value="Clear">
+            </div>
+            <div class="col-md-4 mb-3">
+                <input id="delete-selected" class="btn btn-danger btn-block display-none" type="button" value="Delete Selected">
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">    
+                    
+                    <p>All rights reserved. Designed By <a href="https://github.com/bolanlesadela" target="_blank">Omobolanle Sadela</a></p>
+                
+           
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
