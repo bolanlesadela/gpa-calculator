@@ -32,7 +32,7 @@ tbody td{
     text-align: center;
     border-top: 1px solid #e7e7e7;
     bottom: 0;
-    position: absolute;
+    position:static;
     width: 100%;
     
 }
@@ -62,12 +62,15 @@ tbody td{
 }
 
 @media (max-width: 480px) {
-    #clc {
-        width: 50px;
-        margin: 10px 0;
-    }
+   h1{
+    margin-left: -60px;
+   }
+    #clc{
+    margin-left: -30px;
+   }
     .footer{
         bottom: 0;
         position: static;
     }
 }
+
